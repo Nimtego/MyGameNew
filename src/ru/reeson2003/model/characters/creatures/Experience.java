@@ -17,7 +17,7 @@ class Experience {
         calcExpToLevel(level);
     }
 
-	public void addExperience(int experience) {
+    public void addExperience(int experience) {
 		this.experience += experience;
 		levelUp();
     }
@@ -32,7 +32,7 @@ class Experience {
         }
     }
 
-	private void levelUp() {
+    private void levelUp() {
     	if (this.experience > expToNextLevel) {
     		level++;
         	this.experience -= expToNextLevel;
