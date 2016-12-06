@@ -36,7 +36,7 @@ class Experience {
     	if (this.experience > expToNextLevel) {
     		level++;
         	this.experience -= expToNextLevel;
-			generateSkillPoint();
+		generateSkillPoint(); //
            	calcExpToNextLevel();
         	levelUp();
         }
